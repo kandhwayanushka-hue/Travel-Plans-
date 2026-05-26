@@ -473,7 +473,31 @@ const Register = () => {
         }}
       >
         <Box sx={{ maxWidth: 480, width: "100%" }}>
-          <Box sx={{ textAlign: "center", mb: 4 }}>
+          <Box sx={{ position: "relative", textAlign: "center", mb: 4 }}>
+
+            <Box sx={{position: "absolute",left: { xs: 0, sm: -20, md: -50, lg: -80 },top: 0,}} >  
+              <Link
+                component={RouterLink}
+                to="/"
+                variant="body2"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: 36,
+                  height: 36,
+                  borderRadius: "50%",
+                  border: "1px solid",
+                  borderColor: "divider",
+                  backgroundColor: "background.paper",
+                  textDecoration: "none",
+                  transition: "0.2s ease","&:hover": {backgroundColor: "action.hover",},
+                }}
+              >
+                <ArrowBackIcon sx={{ mr: 0.5, fontSize: 18 }} />
+              </Link>
+            </Box>
+
             <Typography variant="h4" gutterBottom sx={{ fontWeight: 700 }}>
               Create Account
             </Typography>
