@@ -406,6 +406,17 @@ const BookingView = () => {
                       variant="outlined"
                       color="primary"
                       sx={{ borderRadius: 3 }}
+                      onClick={() => {
+                        const origin = flight.origin.trim();
+                        const destination = flight.destination.trim();
+                        const date = flight.departureDate; // YYYY-MM-DD
+
+                        // Google Flights works with city names directly
+                        const url = `https://www.google.com/travel/flights?q=flights+from+${encodeURIComponent(origin)}+to+${encodeURIComponent(destination)}+on+${date}`;
+
+                        // Open in new tab
+                        window.open(url, "_blank");
+                      }}
                     >
                       Select
                     </Button>
