@@ -19,6 +19,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
 import NotFound from "./pages/NotFound";
 import PrivateRoute from "./components/PrivateRoute";
+import ScrollButtons from "./components/ScrollButtons";
 import { loadUser } from "./redux/actions/authActions";
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
               <Route path="/shared-trip/:token" element={<SharedTripView />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
+            <ScrollButtons />
           </div>
         </Router>
       </ThemeProvider>
