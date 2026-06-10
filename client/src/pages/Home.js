@@ -550,7 +550,15 @@ const Home = () => {
           >
             <Link to="/login">
               <button
-                className="wander-nav-log-in"
+                style={{
+                  background: "transparent",
+                  border: "1px solid rgba(26,74,107,0.2)",
+                  color: "var(--ocean)",
+                  padding: "0.75rem 1.2rem",
+                  borderRadius: "999px",
+                  cursor: "pointer",
+                  fontWeight: 500,
+                }}
               >
                 Log In
               </button>
@@ -558,7 +566,15 @@ const Home = () => {
 
             <Link to="/register">
               <button
-                className="wander-nav-create-account"
+                style={{
+                  background: "transparent",
+                  border: "1px solid rgba(26,74,107,0.2)",
+                  color: "var(--ocean)",
+                  padding: "0.75rem 1.2rem",
+                  borderRadius: "999px",
+                  cursor: "pointer",
+                  fontWeight: 500,
+                }}
               >
                 Create Free Account
               </button>
